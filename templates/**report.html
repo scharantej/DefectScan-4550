@@ -1,0 +1,28 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Comment Report</title>
+</head>
+<body>
+<h1>Comment Report</h1>
+<table border="1">
+<thead>
+<tr>
+<th>Comment</th>
+<th>Bug Tracking System</th>
+</tr>
+</thead>
+<tbody>
+{% for comment in comments %}
+<tr>
+<td>{{ comment.comment }}</td>
+<td>{{ comment.system }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</body>
+</html>
+
